@@ -1,0 +1,10 @@
+<article class="containerOwnJoke">
+    <h2>Own Jokes</h2>
+    <section>
+      <input #inputJoke type="text" name="name" placeholder="Enter your own joke.."/>
+    </section>
+    <div class="containerButton">
+      <button (click)="saveJokeToFavorites(inputJoke.value)">Save to Favorites</button>
+      <button (click)="saveJokeToOwnJokes(inputJoke.value)">Save to Own Jokes</button>
+    </div>
+  </article>

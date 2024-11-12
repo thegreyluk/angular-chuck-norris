@@ -1,0 +1,36 @@
+.containerOwnJoke{
+    display: flex;
+    flex-direction: column;
+    padding: 2% 5%;
+    margin-top: 7vh;
+    background: lightgrey;
+    border-radius: 15px;
+}
+
+.containerOwnJoke p{
+    font-size: 25px;
+    color: grey;
+}
+
+.containerOwnJoke > section{
+    width: 77vb;
+    height: 7vh;
+    margin: 20px 0px 30px 30px;
+}
+
+.containerOwnJoke button{
+    width: 20vb;
+    margin-left: 5vb;
+}
+
+input{
+    width: 60vb;
+    height: 2vh;
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button{
+    font-size: 25px;
+}

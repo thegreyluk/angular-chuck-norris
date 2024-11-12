@@ -1,0 +1,44 @@
+<main class="main">
+
+  <!-- global header -->
+  <div class="navigation">
+    <div class="navigation-logo">
+      <h1>Angular Chuck Norris</h1>
+      <img src="../assets/innfactory_logo.png" alt="innFactory Firmenlogo"/>
+    </div>
+    <ul>
+      <li><a routerLink="/" routerLinkActive="active" >Home</a></li>
+      <li><a routerLink="/favorites" routerLinkActive="active" >Favorites</a></li>
+      <li><a routerLink="/cats" routerLinkActive="active" >Cats</a></li>
+      <li><a routerLink="/own-jokes" routerLinkActive="active" >Own Jokes</a></li>
+    </ul>
+  </div>
+  
+  <div class="content">
+
+    <!-- Show main content only on main. -->
+    @if(currentRoute === ''){
+
+      <article class="containerJoke">
+        <h2>Chuck Norris Joke API</h2>
+        <section>
+          <p>{{joke === undefined? '' : joke.value}}</p>
+        </section>
+        <div class="containerButton">
+          <button (click)="saveJokeToFavorites()">Save to Favorites</button>
+          <button (click)="newRandomJoke()">New Joke</button>
+        </div>
+      </article>
+
+      <own-jokes-box/>
+
+      <!-- Show pages content. -->
+    } @else {<router-outlet></router-outlet>}
+  </div>
+
+  <!-- global footer-->
+   <div class="footer">
+      <p>CopyRight Chuck Norris 2024</p>
+   </div>
+</main> 
+

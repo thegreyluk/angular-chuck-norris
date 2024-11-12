@@ -1,0 +1,14 @@
+<h2>Own Jokes:</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Joke</th>
+        </tr>
+    </thead> 
+    <tbody>
+        <tr *ngFor="let joke of jokeList">
+            <td>{{joke.value}}</td>
+            <td>{{joke.creator}}</td>
+        </tr>
+    </tbody>   
+</table>

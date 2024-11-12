@@ -1,0 +1,28 @@
+table {
+    width: 50vb;
+    background: lightblue;
+    border-radius: 15px;
+    padding: 2vh 3vb;
+  }
+
+  thead tr{ 
+    height: 2vh;
+    /* background: green;; */
+  }
+
+  thead th{
+    font-size: 30px;
+    padding-bottom: 1vh;    
+    border-bottom: 2px solid black;
+  }
+
+  tbody td{
+    font-size: 20px;
+    padding: 10px 20px 0px 20px;
+    border-bottom: 1px solid black;
+  }
+
+  tbody tr{
+    padding-right: 50px;
+  }
+  
